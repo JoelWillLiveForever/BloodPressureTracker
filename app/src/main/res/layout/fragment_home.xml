@@ -6,6 +6,63 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView_SYS"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="@string/textView_SYS"
+            android:textFontWeight="300"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView_DIA"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="@string/textView_DIA"
+            android:textFontWeight="300"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView_Pulse"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="@string/textView_Pulse"
+            android:textFontWeight="300"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView_Time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="@string/textView_Time"
+            android:textFontWeight="300"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
     <TextView
         android:id="@+id/text_home"
         android:layout_width="match_parent"

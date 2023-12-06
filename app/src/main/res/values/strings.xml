@@ -10,4 +10,10 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+
+    <string name="textView_SYS">SYS</string>
+    <string name="textView_DIA">DIA</string>
+    <string name="textView_Pulse">Pulse</string>
+    <string name="textView_Time">Time</string>
+
 </resources>
