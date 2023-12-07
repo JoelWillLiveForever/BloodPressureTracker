@@ -7,6 +7,7 @@
     tools:context=".ui.home.HomeFragment">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -15,7 +16,7 @@
 
 
         <TextView
-            android:id="@+id/textView_SYS"
+            android:id="@+id/textView_SYS_Title"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -27,7 +28,7 @@
             android:textStyle="italic" />
 
         <TextView
-            android:id="@+id/textView_DIA"
+            android:id="@+id/textView_DIA_Title"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -39,7 +40,7 @@
             android:textStyle="italic" />
 
         <TextView
-            android:id="@+id/textView_Pulse"
+            android:id="@+id/textView_Pulse_Title"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -51,7 +52,7 @@
             android:textStyle="italic" />
 
         <TextView
-            android:id="@+id/textView_Time"
+            android:id="@+id/textView_Time_Title"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -64,7 +65,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/text_home"
+        android:id="@+id/textView_noRecordsYet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -72,8 +73,24 @@
         android:layout_marginEnd="8dp"
         android:textAlignment="center"
         android:textSize="20sp"
+        android:text="@string/textView_noRecordsYet"
+        android:fontFamily="@font/montserrat_regular"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_bloodPressureList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

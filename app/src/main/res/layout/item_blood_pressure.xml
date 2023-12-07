@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:fontFamily="@font/montserrat"
+        android:textFontWeight="400"
+        android:textSize="7pt"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/design_default_color_primary"
+        android:id="@+id/textView_RecordDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Mon, 12.06.2023" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2.333dp"
+        android:layout_marginHorizontal="12dp"
+        android:background="@drawable/rounded_line" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6.667dp"
+        android:layout_marginHorizontal="8dp"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardBackgroundColor="@android:color/white">
+        <!--        card_view:cardElevation="8dp"-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/view_pressureStatus"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/pressure_status_normal"
+                android:layout_width="5.333dp"
+                android:layout_height="46.667dp" />
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/textView_SYS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:layout_marginStart="19dp"
+                android:textStyle="italic"
+                android:textFontWeight="300"
+                android:textSize="15pt"
+                android:textColor="#D32F2F"
+                tools:text="124" />
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/textView_DIA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:layout_marginStart="19dp"
+                android:textStyle="italic"
+                android:textFontWeight="300"
+                android:textSize="15pt"
+                android:textColor="#1976D2"
+                tools:text="78" />
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/textView_Pulse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:layout_marginStart="19dp"
+                android:textStyle="italic"
+                android:textFontWeight="300"
+                android:textSize="15pt"
+                android:textColor="#7B1FA2"
+                tools:text="88" />
+
+            <View android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="8dp"
+                android:id="@+id/textView_Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="italic"
+                android:textFontWeight="300"
+                android:textSize="9pt"
+                android:textColor="#A1000000"
+                tools:text="17:15" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

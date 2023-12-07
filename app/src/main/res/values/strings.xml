@@ -16,4 +16,6 @@
     <string name="textView_Pulse">Pulse</string>
     <string name="textView_Time">Time</string>
 
+    <string name="textView_noRecordsYet">No records yet</string>
+
 </resources>
